@@ -56,7 +56,7 @@ insert into Orders values
     -> (3011, 9891.88, '1990-10-6', 2006, 1001);
 
 1). select count(Sname) from SalesPeople where Sname like 'a%' or 'A%';
-2).
+2). select SalesPeople.Sname, Orders.Amt from SalesPeople inner join Orders on SalesPeople.Snum=Orders.Snum where Orders.Amt>2000;
 3). select count(Sname) from SalesPeople where City='Newyork';
 4). select count(Sname) from SalesPeople where City='London' or City='Paris';
 5).
